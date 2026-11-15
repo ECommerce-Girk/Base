@@ -6,6 +6,5 @@ public partial interface IUoW
     Task<T[]> GetMany<T>(Guid[] ids, QueryFlags flags, CancellationToken ct) where T : Entity;
     void Add<T>(T entity) where T : Entity;
     void Remove<T>(T entity) where T : Entity;
-    void Raise(IDomainEvent domainEvent);
     Task<int> SaveChanges(CancellationToken ct = default);
 }

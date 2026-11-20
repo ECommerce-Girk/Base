@@ -1,6 +1,6 @@
 namespace Base;
 
-public interface IDomainEventCollector
+public interface ICollector
 {
     void Collect(IDomainEvent domainEvent);
 }

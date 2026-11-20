@@ -1,4 +1,4 @@
-namespace Base.ValueObjects;
+namespace Base;
 
 public abstract record Text
 {
